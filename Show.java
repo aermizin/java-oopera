@@ -19,18 +19,17 @@ public class Show {
     }
 
     public void replaceActor(Actor replaceableActor, Actor currentActor) {
-        int index = 0;
-        for (Actor actor :listOfActors) {
-            index++;
-            if (replaceableActor.equals(actor)) {
-                listOfActors.set(index, currentActor);
-                index = 0;
+        boolean found = false;
+        for (int i = 0; i < listOfActors.size(); i++) {
+            if (replaceableActor.equals(listOfActors.get(i))) {
+                listOfActors.set(i, currentActor);
                 System.out.println("В спектакль добавлен новый актер: " + currentActor);
+                found = true;
                 break;
             }
-            if (index == listOfActors.size()) {
-                System.out.println("Данный актер отсутствует в спектакле: " + replaceableActor);
-            }
+        }
+        if (!found) {
+            System.out.println("Данный актер отсутствует в спектакле: " + replaceableActor);
         }
     }
 
