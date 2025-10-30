@@ -5,13 +5,14 @@ public class MusicalShow extends Show {
     private String librettoText;
 
     public MusicalShow (String title, int duration, Director director, ArrayList<Actor> listOfActors, Person musicAuthor,
-    String librettoText) {
+                        String librettoText) {
         super(title, duration, director, listOfActors);
         this.musicAuthor = musicAuthor;
         this.librettoText = librettoText;
     }
 
-    public String getLibrettoText() {
-        return librettoText;
+    public void getLibrettoText() {
+        System.out.println(librettoText);
     }
 }
+

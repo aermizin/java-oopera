@@ -1,9 +1,18 @@
 import java.util.Objects;
 
 public class Actor extends Person {
+    double height;
+    public Actor(String name, String surname, Gender gender, double height) {
+        super(name, surname, gender);
+        this.height = height;
+    }
 
-    public Actor(String name, String surname, String gender, double height) {
-        super(name, surname, gender, height);
+
+    @Override
+    public String toString() {
+        return  super.toString() +
+                "рост ='" + height +
+                "'.";
     }
 
     @Override
