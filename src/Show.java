@@ -40,7 +40,7 @@ public class Show {
         } else {
             System.out.println("В спектакле участвуют " + numberPerson + " актера с фамилей : " + replaceableActor
             + ".");
-            System.out.println("Рекомендуется добавить актера в ручную.");
+            System.out.println("Рекомендуется заменить актера в ручную.");
         }
             numberPerson = 0;
     }
