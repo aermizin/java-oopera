@@ -42,8 +42,8 @@ public class Show {
             + ".");
             System.out.println("Рекомендуется заменить актера в ручную.");
         }
-            numberPerson = 0;
-            indexActor = 0;
+        numberPerson = 0;
+        indexActor = 0;
     }
     // Реализовал метод, когда в спектале участвуют несколько людей с одинаковой фамилей.
 
