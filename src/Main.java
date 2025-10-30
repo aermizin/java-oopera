@@ -60,6 +60,8 @@ public class Main {
 
         opera.replaceActor("Марков", actor3);
         opera.printActor();
+        opera.replaceActor("Марков", actor3);
+        opera.printActor();
         opera.replaceActor("Колокольцева", actor1);
         opera.printActor();
         opera.replaceActor("Иванов", actor1);
