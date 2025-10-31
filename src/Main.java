@@ -32,11 +32,11 @@ public class Main {
         opera.getLibrettoText();
 
         System.out.println("Информация о режисере спектакля " + "'" + musicalShow.getTitle() + "'"  + ":");
-        musicalShow.infoDirector();
+        musicalShow.printInfoDirector();
         System.out.println("Информация о режисере баллета " + "'" + ballet.getTitle() + "'" + ":");
-        ballet.infoDirector();
+        ballet.printInfoDirector();
         System.out.println("Информация о режисере спектакля " + "'" + opera.getTitle() + "'" + ":");
-        opera.infoDirector();
+        opera.printInfoDirector();
 
         musicalShow.addActor(actor1);
         musicalShow.addActor(actor1);

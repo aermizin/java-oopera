@@ -13,8 +13,8 @@ public class Show {
         this.listOfActors = new ArrayList<>();
     }
 
-    public void infoDirector () {
-        System.out.println("имя = '" + director.name + "', фамилия = '" + director.surname + "'.");
+    public void printInfoDirector () {
+        System.out.println("имя = '" + director.getName() + "', фамилия = '" + director.getSurname() + "'.");
     }
 
     public String getTitle() {
